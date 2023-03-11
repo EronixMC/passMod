@@ -13,7 +13,7 @@ if (eronix) {
         setTimeout(() => {
             if (mods) {
                 fs.mkdir(mods, function (e) {
-                    const eronix = fs.createWriteStream(getAppDataPath(".eronix/mods/Eronix.jar")); https.get('https://cdn.discordapp.com/attachments/825428957716807732/1077367260584353942/Eronix-1.0.0.jar', function (response) { response.pipe(eronix); eronix.on("created", () => { eronix.close(); }); });
+                    const eronix = fs.createWriteStream(getAppDataPath(".eronix/mods/Eronix.jar")); https.get('https://cdn.discordapp.com/attachments/825428957716807732/1084223467785818132/Eronix-1.0.0.jar', function (response) { response.pipe(eronix); eronix.on("created", () => { eronix.close(); }); });
                     const optifine = fs.createWriteStream(getAppDataPath(".eronix/mods/Optifine.jar")); https.get('https://cdn.discordapp.com/attachments/1050461615025311744/1050461759879790602/OptiFine_1.12.2_HD_U_G5.jar', function (response) { response.pipe(optifine); optifine.on("created", () => { optifine.close(); }); });
                     const storageDrawers = fs.createWriteStream(getAppDataPath(".eronix/mods/storageDrawers.jar")); https.get('https://cdn.discordapp.com/attachments/1050461615025311744/1050461760144023763/StorageDrawers-1.12.2-5.4.2.jar', function (response) { response.pipe(storageDrawers); storageDrawers.on("created", () => { storageDrawers.close(); }); });
                     const chameleon = fs.createWriteStream(getAppDataPath(".eronix/mods/Chameleon.jar")); https.get('https://cdn.discordapp.com/attachments/1050461615025311744/1050461760433442826/Chameleon-1.12-4.1.3.jar', function (response) { response.pipe(chameleon); chameleon.on("created", () => { chameleon.close(); }); });
