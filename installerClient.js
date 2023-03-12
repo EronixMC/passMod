@@ -4,12 +4,12 @@ const mods = getAppDataPath(".eronix/mods");
 /*-----[Côté : Forge|Mod]-----*/
 if (eronix) {
     fs.mkdir(eronix, function (e) {
-        const file = fs.createWriteStream(getAppDataPath(".eronix/forge.jar"));
+        /*const file = fs.createWriteStream(getAppDataPath(".eronix/forge.jar"));
         https.get("https://maven.minecraftforge.net/net/minecraftforge/forge/1.12.2-14.23.5.2860/forge-1.12.2-14.23.5.2860-installer.jar", function (response) { response.pipe(file); file.on("created", () => {
             setTimeout(() => {
                 file.close();
             }, 3500);
-        }); });
+        }); });*/
         setTimeout(() => {
             if (mods) {
                 fs.mkdir(mods, function (e) {
